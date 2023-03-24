@@ -36,6 +36,7 @@ app.use(cors())
 app.use(bodyParser.json())
 
 
+
 // for serving production build
 if(process.env.NODE_ENV==='production'){
 	app.use(express.static(__dirname+"/client/build"))
